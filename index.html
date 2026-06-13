@@ -7,9 +7,9 @@
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { background: #0a0a1a; display: flex; justify-content: center; align-items: center; min-height: 100vh; font-family: 'Courier New', monospace; overflow: hidden; }
-#container { display: flex; gap: 12px; }
+#container { display: flex; gap: 12px; align-items: flex-start; }
 canvas { border: 2px solid #1a1a3a; cursor: crosshair; }
-#panel { width: 200px; background: #0d0d2a; border: 2px solid #1a1a3a; padding: 12px; color: #8888cc; display: flex; flex-direction: column; gap: 8px; }
+#panel { width: 200px; height: 580px; background: #0d0d2a; border: 2px solid #1a1a3a; padding: 12px; color: #8888cc; display: flex; flex-direction: column; gap: 8px; overflow-y: auto; }
 .panel-title { color: #aaaaff; font-size: 14px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; border-bottom: 1px solid #2a2a4a; padding-bottom: 4px; }
 .stat { display: flex; justify-content: space-between; font-size: 13px; }
 .stat-val { color: #ccccff; font-weight: bold; }
