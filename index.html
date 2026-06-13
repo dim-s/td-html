@@ -125,6 +125,7 @@ function playSound(freq, dur, type = 'square', vol = 0.08) {
 function sndShoot(type) {
   if (type === 'triangle') playSound(880, 0.06, 'square', 0.05);
   else if (type === 'square') playSound(440, 0.12, 'sawtooth', 0.06);
+  else if (type === 'hexagon') { playSound(1200, 0.08, 'sine', 0.06); playSound(1800, 0.04, 'sine', 0.04); }
   else playSound(220, 0.25, 'sine', 0.07);
 }
 function sndHit() { playSound(300, 0.08, 'square', 0.04); }
